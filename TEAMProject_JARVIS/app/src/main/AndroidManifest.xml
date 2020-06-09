@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moomoo.teamproject_jarvis">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ironmanface"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ironmanface"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".fan_app"
+            android:label="마음의 평화"></activity>
+        <activity android:name=".water_app"
+            android:label="물마시기"/>
+        <activity android:name=".calculator_main"
+            android:label="계산기"/>
+        <activity
+            android:name=".account"
+            android:label="가계부" />
+        <activity
+            android:name=".randomupdown"
+            android:label="Up &amp; Down!" />
+        <activity
+            android:name=".simpletodo_sub"
+            android:label="오늘 할 일" />
+        <activity
+            android:name=".simpletodo"
+            android:label="오늘 할 일" />
+
+        <service
+            android:name=".service_random_dessert"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".dessert"
+            android:label="오늘 뭐 먹지?(후식)" />
+        <activity
+            android:name=".drunk"
+            android:label="오늘 뭐 먹지?(술)" />
+        <activity
+            android:name=".food_app"
+            android:label="오늘 뭐 먹지?(식사)" />
+        <activity
+            android:name=".ruler"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <service
+            android:name=".service_backgroundmusic"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service_voice_congratulation"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service_voice_data"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service_voice_afraid"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service_voice_check"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service_voice_service"
+            android:enabled="true"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

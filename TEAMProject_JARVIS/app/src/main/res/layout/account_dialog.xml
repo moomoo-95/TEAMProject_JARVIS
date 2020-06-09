@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/count_subname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="사용 내역"/>
+    <EditText
+        android:id="@+id/count_subcoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="금액"
+        android:inputType="number"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/count_subin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="수입"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/count_subout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="지출"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/count_subinput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff92f37"
+            android:background="#ffffd700"
+            android:layout_margin="10dp"
+            android:text="입력"/>
+        <Button
+            android:id="@+id/count_subcancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff92f37"
+            android:background="#ffffd700"
+            android:layout_margin="10dp"
+            android:text="취소"/>
+    </LinearLayout>
+
+
+</LinearLayout>

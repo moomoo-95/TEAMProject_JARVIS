@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/jarvis_main"
+    android:gravity="bottom"
+    >
+    <TextView
+        android:id="@+id/dessertbox"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:textSize="30dp"
+        android:padding="20dp"
+        android:textColor="#ffffffff"
+        android:text="후식을 추천해드려도 괜찮을까요?"
+        android:background="@drawable/textbox"/>
+    <Button
+        android:id="@+id/dessertbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="추천해줘"
+        android:textColor="#fff92f37"
+        android:background="#ffffd700"
+        android:layout_margin="5dp"/>
+</LinearLayout>

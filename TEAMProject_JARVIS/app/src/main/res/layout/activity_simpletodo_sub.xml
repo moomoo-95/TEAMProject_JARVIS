@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/jarvis_main">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="할 일"
+            android:textColor="#FFFFFFFF"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/to_do"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#FFFFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="마감일"
+            android:textColor="#FFFFFFFF"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/to_do_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="마감 날짜 선택"
+            android:background="#FFFFD700"
+            android:layout_marginLeft="15dp"
+            android:onClick="add_date"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/to_do_done"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="추가하기"
+        android:background="#FFFFD700"
+        android:layout_marginRight="15dp"
+        android:onClick="done"/>
+</LinearLayout>

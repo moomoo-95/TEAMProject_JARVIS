@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/jarvis_main"
+    android:gravity="bottom"
+    android:layout_gravity="bottom"
+    >
+    <TextView
+        android:id="@+id/textbox"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:textSize="30dp"
+        android:text="식사를 할 수 있는 시간이 많으신가요?"
+        android:padding="20dp"
+        android:textColor="#ffffffff"
+        android:background="@drawable/textbox"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/yesbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="응"
+            android:textColor="#fff92f37"
+            android:background="#ffffd700"
+            android:layout_margin="2dp"
+            android:onClick="choice"/>
+        <Button
+            android:id="@+id/nobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#fff92f37"
+            android:background="#ffffd700"
+            android:layout_margin="2dp"
+            android:text="아니"
+            android:onClick="choice"/>
+        <Button
+            android:id="@+id/dontknowbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="잘 모르겠어"
+            android:textColor="#fff92f37"
+            android:background="#ffffd700"
+            android:layout_margin="2dp"
+            android:onClick="choice"/>
+        <Button
+            android:id="@+id/restartbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="다시 시작"
+            android:textColor="#fff92f37"
+            android:background="#ffffd700"
+            android:layout_margin="2dp"
+            android:visibility="gone"
+            android:onClick="choice"
+            />
+    </LinearLayout>
+</LinearLayout>

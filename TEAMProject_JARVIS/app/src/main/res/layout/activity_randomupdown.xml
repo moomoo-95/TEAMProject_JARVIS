@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/jarvis_main"
+    >
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="65dp"
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFFFF"
+        android:text="1 ~ 20 사이의 숫자를 골라주세요 "
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_below="@id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="160dp"
+        android:text="도전!!"
+        android:textColor="#FFFFFFFF"
+        android:textSize="30dp" />
+
+
+    <LinearLayout
+        android:id="@+id/liner1"
+        android:layout_below="@id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <NumberPicker
+                android:id="@+id/numpick1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical"></NumberPicker>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#FFFFD700"
+                android:onClick="guess1"
+                android:text="Guess"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <NumberPicker
+
+                android:id="@+id/numpick2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical"></NumberPicker>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#FFFFD700"
+                android:onClick="guess2"
+                android:text="Guess"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <NumberPicker
+
+                android:id="@+id/numpick3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical"></NumberPicker>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="guess3"
+                android:background="#FFFFD700"
+                android:text="Guess"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@id/liner1"
+        android:id="@+id/btn_restart"
+        android:layout_marginLeft="160dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="재도전"
+        android:onClick="Restart"
+        android:background="#FFFFD700"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
